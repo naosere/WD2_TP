@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: 'Orbitron', sans-serif; /* tipografía sci-fi */
+    font-family:'Starjedi', 'Orbitron', sans-serif; /* tipografía sci-fi */
     background-color: #0b0b0b; /* negro espacial */
     color: #f5f5f5; /* texto claro */
 }
@@ -12,15 +12,18 @@ body {
 /* ---------- HEADER ---------- */
 header {
     background-color: #111; 
-    padding: 15px 30px;
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px solid #ffd700; /* amarillo dorado Star Wars */
+    margin-bottom: 2%;
+    
 }
 
-header img.logo {
-    height: 60px;
+header img {
+    width: 15%;
 }
 
 nav ul {
@@ -35,7 +38,7 @@ nav a {
     text-decoration: none;
     color: #ffd700;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 110%;
     transition: color 0.3s ease;
 }
 
@@ -43,104 +46,110 @@ nav a:hover {
     color: #ffffff; /* se ilumina al pasar */
 }
 
-/* ---------- MAIN ---------- */
-main {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+
+
+
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    background-color: #111;
+    padding-bottom: 4%;
+    border-top: 2px solid #ffd700;
+    margin-top: 2%;
+}
+footer h2{
+    padding-left: 5%;
+    text-align: left;
+    font-size: 150%;
+}
+footer hr{
+    width: 90%;
+    margin: auto;
+}
+footer h3{
+    padding-left: 6%;
+    padding-bottom: 0%;
+    font-weight: 500; 
+}
+footer div{
+    margin-top: 1%;
+}
+footer img{
+    width: 2.5%;
+    float :right;
+    margin: 1%;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-top: 0%;
+}
+footer div:last-of-type {
+    text-align: right;
+    padding-right: 2%;
+}
+.especial{
+    font-weight: 800;
+    font-size: 150%;
 }
 
-h1, h2 {
+
+
+
+/* ---------- MAIN ---------- */
+main {
+    width: 94%;
+    margin: auto;
+}
+
+
+
+
+
+/*INDEX*/
+.hero{
+    background-image: url("imagenes/galaxia_fondo.jpg");
+    background-size: cover;        /* Ensures the image covers the entire div */
+    background-position: center;   /* Centers the image */
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    padding-bottom: 5%;              /* Adjust padding as needed */
+    text-align: center;            /* Centers the text */
+}
+.hero h1, .hero h2{
     color: #ffd700;
     text-align: center;
     text-shadow: 0 0 10px #ffd700;
+    font-size: 190%;
+}
+.hero h2{
+    font-size: 140%;
 }
 
-p {
-    line-height: 1.6;
-    font-size: 1.1em;
-    max-width: 900px;
+
+.destacados div{
+    width: 20%;
+    text-align: center;
+   
+}
+.destacados h3, .destacados h4{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.destacados a{
+    color: #f5f5f5;
+    text-decoration: none;
+}
+.destacados p{
+    color: #ffffff9a;
+    text-align: center;
+}
+.destacados h3{
+    
+}
+.destacados img{
+    width: 90%;
+    border-radius: 50%;
+    margin-bottom: 3%;
     margin: auto;
 }
 
-/* ---------- SECCIONES ESPECIALES ---------- */
-
-/* Sección productos: grilla */
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.producto-card {
-    background-color: #1a1a1a;
-    border: 1px solid #444;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.producto-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px #ffd70055;
-}
-
-.producto-card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-/* Suscripción */
-.suscripcion-form {
-    background-color: #1a1a1a;
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.suscripcion-form input,
-.suscripcion-form button {
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1em;
-}
-
-.suscripcion-form input {
-    background-color: #333;
-    color: #fff;
-}
-
-.suscripcion-form button {
-    background-color: #ffd700;
-    color: #111;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.suscripcion-form button:hover {
-    background-color: #fff;
-}
-
-/* ---------- FOOTER ---------- */
-footer {
-    background-color: #111;
-    text-align: center;
-    padding: 20px;
-    border-top: 2px solid #ffd700;
-    font-size: 0.9em;
-    color: #bbb;
-}
-
-footer p {
-    margin: 5px 0;
-}
