@@ -7,16 +7,18 @@ body {
 }
 
 /* HEADER */
+
+
 header {
-    background-color: #111; 
-    padding-left: 5%;
+    background-color: black ; 
+     padding-left: 5%;
     padding-right: 5%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+   
     border-bottom: 2px solid #ffd700; /* amarillo dorado Star Wars */
     margin-bottom: 2%;
-    
+     justify-content: space-between;
 }
 
 header img {
@@ -26,9 +28,9 @@ header img {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
     margin: 0;
     padding: 0;
+    gap: 25px;
 }
 
 nav a {
@@ -36,25 +38,24 @@ nav a {
     color: #ffd700;
     font-weight: bold;
     font-size: 110%;
-    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #ffffff; /* se ilumina al pasar */
+    color: #ffffff; 
 }
 
 
+/* FOOTER */
 
-
-
-/* ---------- FOOTER ---------- */
-
-footer{
-    background-color: #111;
-    padding-bottom: 4%;
+footer
+{
+    background-color: black;
+   
     border-top: 2px solid #ffd700;
     margin-top: 2%;
+     padding-bottom: 4%;
 }
+
 footer h2{
     padding-left: 5%;
     text-align: left;
@@ -66,20 +67,26 @@ footer hr{
 }
 footer h3{
     padding-left: 6%;
-    padding-bottom: 0%;
-    font-weight: 500; 
+    font-weight: 500;
+    padding-bottom: 0%; 
 }
-footer div{
+
+
+footer div
+{
     margin-top: 1%;
 }
+
 footer img{
     width: 2.5%;
-    float :right;
+    
     margin: 1%;
-    vertical-align: middle;
     border-radius: 50%;
     margin-top: 0%;
+    float :right;
+    vertical-align: middle;
 }
+
 footer div:last-of-type {
     text-align: right;
     padding-right: 2%;
@@ -90,63 +97,601 @@ footer div:last-of-type {
 }
 
 
-
-
-/* ---------- MAIN ---------- */
-main {
-    width: 94%;
-    margin: auto;
-}
-
-
-
-
-
 /*INDEX*/
-.hero{
-    background-image: url("imagenes/galaxia_fondo.jpg");
-    background-size: cover;        /* Ensures the image covers the entire div */
-    background-position: center;   /* Centers the image */
-    background-repeat: no-repeat;
+
+.fotoInicial{
+    background-image: url("imagenes/galaxia_fondo.jpg"); 
+    background-position: center;   
     padding-top: 5%;
-    padding-bottom: 5%;              /* Adjust padding as needed */
-    text-align: center;            /* Centers the text */
+    padding-bottom: 5%;              
+    text-align: center;  
+    background-size: cover;          
 }
-.hero h1, .hero h2{
+.fotoInicial h1 .fotoInicial h2{
     color: #ffd700;
     text-align: center;
-    text-shadow: 0 0 10px #ffd700;
+  
     font-size: 190%;
+      text-shadow: 0 0 10px #ffd700;
 }
 .hero h2{
     font-size: 140%;
 }
 
 
-.destacados div{
-    width: 20%;
-    text-align: center;
-   
+/*INICIO INDEX, PRODUCTOS DESTACADOS*/
+
+.destacados{
+  background-color: black;
+  color: white;
+  display: grid;                     
+  grid-template-columns: 33% 33% 33%;
+  column-gap: 2%;                   
+  row-gap: 2%;                                      
+  font-family: 'Montserrat', Arial, sans-serif;
+    padding: 5%;   
 }
-.destacados h3, .destacados h4{
-    text-align: justify;
-    text-justify: inter-word;
+
+
+.destacados h2{
+             
+  margin: 5%;                    
+  text-align: center;
+  grid-column: 1 / 4;  
+  color: #ffe81f;
+  font-family: 'Orbitron', sans-serif;
 }
+
 .destacados a{
-    color: #f5f5f5;
-    text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  background-color: black;
+  border: 2px solid #2b2b2b;        
+  border-radius: 12px;
+                      
+  text-align: center;
+   padding: 5%;  
 }
-.destacados p{
-    color: #ffffff9a;
-    text-align: center;
-}
-.destacados h3{
-    
-}
+
+
 .destacados img{
-    width: 90%;
-    border-radius: 50%;
-    margin-bottom: 3%;
-    margin: auto;
+  width: 90%;                         
+                   
+  border: 3px solid #ffe81f;          
+  display: block;
+  margin: auto;
+  border-radius: 12%;
+}
+
+.destacados p
+{
+  margin: 5%;
+    color: #ffe81f;
+  border: 1px solid #ffe81f;
+ 
+  border-radius: 20px;
+  background-color: black;         
+  font-weight: 600;
+  letter-spacing: 2px;
+   padding: 2%;
+}
+
+.destacados h3{
+  margin: 5%;
+  color: #1f9dff;                     
+  font-weight: 600;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.destacados h4{
+  margin: 5%;
+  color: #cfcfcf;
+  font-weight: normal;
+}
+
+
+/*INDEX CONFIANZA, NAO ACA HAY QUE PONER BIEN LO DEL COLOR*/
+
+.confianza{
+  background-color: #1a1a1a;     
+  color: #f0f0f0;                
+                  
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-align: center;
+  border-top: 3px solid #ffe81f; 
+   padding: 4%;    
+}
+
+
+.confianza ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.confianza li{
+  margin: 3%;                    
+  font-size: 100%;
+}
+
+
+/* INDEX DE LO QUE DICEN NUESTROS CLIENTES, NOS FALTA AGREGAR LAS FOTOS A CADA CLIENTE */
+
+.Reseñas{
+  background-color: #0d0d0d;
+  color: white;
+  padding: 5%;
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-align: center;
+  display: flex;                 
+  justify-content: space-between;
+}
+
+
+.Reseñas h1{
+  color: #ffe81f;
+  margin: 5%;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+.Reseñas div{
+  width: 30%;                    
+  background-color: #1a1a1a;
+  border: 1px solid #222;
+ 
+  padding: 5%;
+  box-sizing: border-box;        
+  transition: background 0.3s, border-color 0.3s; /* PROFE ESTO LO AGREGAMOS DE UN MATERIAL COMPLEMENTARIO */
+  font-family: 'Montserrat', Arial, sans-serif;
+   border-radius: 12px;
+}
+
+
+.Reseñas div:hover
+{
+  background-color: #2a2a2a;     
+  border-color: #ffe81f;        
+}
+
+
+.Reseñas img{
+  width: 40%;
+  border-radius: 50%;
+  border: 2px solid #ffe81f;
+  margin-bottom: 5%;
+}
+
+
+.Reseñas div p:first-of-type
+{
+  color: #ffe81f;
+  margin: 5%;
+  
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+}
+
+.Reseñas div p:last-of-type{
+  font-size: 90%;
+  color: #ddd;
+  margin: 5%;
+  line-height: 1.4em;
+}
+
+
+
+/*MERCH*/
+
+.merch{
+  background-color: #0a0f1e;     
+  color: #ffffff;
+  padding: 5%;
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+  
+  border-top: 3px solid #ffe81f;
+  border-bottom: 3px solid #ffe81f;
+}
+
+
+.merch h1{
+  margin: 3% 0;
+  color: #ffe81f;
+  font-family: 'Orbitron', sans-serif;  
+  display: inline-block;
+  padding: 1% 2%;
+  border: 2px solid #ffe81f;           
+  border-radius: 8px;                    
+  background-color: #11254a;             
+}
+
+
+.merch > p{
+  margin: 2% 0 4% 0;
+  color: #cfe2ff;
+  font-size: 95%;
+}
+
+
+.ProductosMerch{
+  display: flex;                  
+  justify-content: space-between;
+  flex-wrap: wrap;                 
+  margin: 0 3%;
+}
+
+
+.ProductosMerch div{
+  width: 30%;                      
+  background-color: #121212;
+  border: 2px solid #2f2f2f;    
+  border-radius: 12px;            
+  padding: 3%;
+  box-sizing: border-box;
+  text-align: left;
+  border-left: 8px solid #ffe81f;  
+  transition: background .2s, border-color .2s;
+}
+
+
+.ProductosMerch img{
+  width: 90%;
+  border-radius: 10%;
+  border: 3px solid #ffe81f;      
+  display: block;
+  margin: 4% auto;
+}
+
+
+.ProductosMerch h3{
+  margin: 3% 0;
+  padding: 1% 2%;
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;  
+  display: inline-block;
+  background-color: #1f9dff;            
+  border-radius: 6px;                    
+}
+
+
+.ProductosMerch p{
+  margin: 3% 0;
+  color: #e6e6e6;
+  font-size: 90%;
+  line-height: 1.35em;
+}
+
+
+.ProductosMerch div:hover{
+  background-color: #1a1a1a;
+  border-color: #3a3a3a;
+  border-left-color: #ffe81f;      
+}
+
+
+
+/* NOSOTROS */
+
+/* LA PARTE DEL PRINCIPIO, LA FOTO DE LOS FANS, TENEMOS QUE BUSCAR LA FOTO NAO*/
+.nosotros{
+  background-image: url("imagenes/Fans.jpg"); 
+  background-size: cover;      
+  background-position: center; 
+  color: white;
+  padding: 10%;
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+  
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+
+.nosotros h1{
+  color: #ffe81f;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 3%;
+}
+
+/*NOSOTROS MISION*/
+.mision{
+  background-color: #0d0d0d;      
+  color: white;
+  padding: 5%;
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-align: center;              
+}
+
+
+.mision img{
+  width: 60%;                     
+  border-radius: 12px;
+  border: 3px solid #ffe81f;       
+  margin-bottom: 3%;
+}
+
+
+.mision h2{
+  color: #ffe81f;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 2%;
+}
+
+
+.mision p{
+  line-height: 1.5em;
+  color: #ddd;
+  font-size: 95%;
+  max-width: 70%;
+  margin: auto;
+}
+
+
+/*NOSOTROS VALORES*/
+.valores{
+  background-color: #141414;        
+  color: #ffffff;
+  padding: 5%;
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-align: center;
+  border-top: 3px solid #ffe81f;    
+  border-bottom: 3px solid #ffe81f; 
+}
+
+
+.valores h2{
+  color: #ffe81f;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 3%;
+}
+
+
+.valores ul{
+  list-style: none;                
+  padding: 0;
+  margin: 0 auto;
+  max-width: 70%;                  
+  text-align: left;
+}
+
+
+.valores li{
+  margin: 3% 0;
+  font-size: 100%;
+  line-height: 1.4em;
+  color: #ddd;
+}
+
+.valores li strong{
+  color: #1f9dff;                   
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+
+/*NOSOTROOS, EQUIPO*/
+.NuestroEquipo{
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 5%;
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+
+.NuestroEquipo h2{
+  color: #ffe81f;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 5%;
+}
+
+
+.equipo{
+  display: flex;
+  justify-content: center;   
+  gap: 5%;                  
+}
+
+
+.equipo div{
+  width: 30%;                
+}
+
+
+.equipo img{
+  width: 80%;
+  border-radius: 50%;        
+  border: 3px solid #ffe81f; 
+  margin-bottom: 5%;
+}
+
+
+.equipo h3{
+  margin: 3% 0;
+  font-family: 'Orbitron', sans-serif;
+  color: #1f9dff;          
+}
+
+
+.equipo p{
+  font-size: 90%;
+  color: #ddd;
+  line-height: 1.4em;
+}
+
+/*PRODUCTOS*/
+
+.productos{
+  background-color: #0a0f1e;       
+  color: #fff;
+  padding: 5%;
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+  border-top: 3px solid #ffe81f;    
+  border-bottom: 3px solid #ffe81f;
+}
+
+.productos h1{
+  margin: 3% 0;
+  color: #ffe81f;
+  font-family: 'Orbitron', sans-serif;
+  display: inline-block;
+  padding: 1% 2%;
+  border: 2px solid #ffe81f;        
+  border-radius: 8px;
+  background-color: #11254a;        
+}
+
+
+.productos > p{
+  margin: 2% 0 4% 0;
+  color: #cfe2ff;
+  font-size: 95%;
+}
+
+
+.productosParte{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 3%;
+}
+
+
+.productosParte div{
+  width: 30%;
+  background-color: #121212;
+  border: 2px solid #2f2f2f;
+  border-radius: 12px;
+  padding: 3%;
+  box-sizing: border-box;
+  text-align: center;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+
+.productosParte div:hover{
+  background-color: #1e1e1e;
+  border-color: #ffe81f;
+}
+
+
+.productosParte img{
+  width: 85%;
+  border-radius: 10%;
+  border: 3px solid #ffe81f;
+  margin-bottom: 5%;
+}
+
+
+.productosParte h3{
+  margin: 3% 0;
+  font-family: 'Orbitron', sans-serif;
+  color: #1f9dff;              
+}
+
+
+.productosParte p{
+  font-size: 90%;
+  color: #ddd;
+  margin: 3% 0;
+  line-height: 1.35em;
+}
+
+
+
+/*sUSCRIPCION*/
+.suscripcionInicio{
+  background-color: #0a0f1e;
+  color: #fff;
+  padding: 5%;
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+  border-top: 3px solid #ffe81f;
+  border-bottom: 3px solid #ffe81f;
+}
+
+.suscripcionInicio h1{
+  color: #ffe81f;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 2%;
+}
+
+.suscripcionInicio p{
+  color: #cfe2ff;
+  margin-bottom: 3%;
+}
+
+.suscripcionInicio ul{
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 60%;
+  text-align: left;
+}
+
+.suscripcionInicio li{
+  margin: 2% 0;
+  color: #ddd;
+}
+
+
+.suscripcionFormulario{
+  background-color: #141414;
+  border: 2px solid #2f2f2f;
+  border-radius: 12px;
+  padding: 4%;
+  margin: 3% auto;
+  width: 60%;
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-align: left;
+  color: #fff;
+}
+
+.suscripcionFormulario label{
+  display: block;
+  margin: 2% 0 1% 0;
+  font-family: 'Orbitron', sans-serif;
+  color: #ffe81f;
+}
+
+.suscripcionFormulario input,
+.suscripcionFormulario select{
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 3%;
+  border: 2px solid #ffe81f;
+  border-radius: 6px;
+  background-color: #0d0d0d;
+  color: #fff;
+  font-size: 95%;
+}
+
+.suscripcionFormulario input:focus,
+.suscripcionFormulario select:focus{
+  outline: none;
+  border-color: #1f9dff; 
+}
+
+.suscripcionFormulario button{
+  width: 100%;
+  padding: 3%;
+  background-color: #ffe81f;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 100%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.suscripcionFormulario button:hover{
+  background-color: #1f9dff; /* azul al pasar el mouse */
+  color: #fff;
 }
 
